@@ -1,0 +1,23 @@
+import Math;
+
+def isFibonacci(seq) {
+  for(var i = 0; i < seq.len()-2; ++i) {
+    var j = i + 1;
+    var k = i + 2;
+    if (seq[k] != seq[i] + seq[j])
+      return false;
+    else
+      return true;
+  }
+}
+
+
+def isAP(seq) {
+  for(var i = 0; i < seq.len()-2; ++i) {
+    if (seq[i + 1] - seq[i] != seq[i + 2] - seq[i + 1])
+      return false;
+  return true;
+  }
+}
+
+   

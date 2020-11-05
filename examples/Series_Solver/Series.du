@@ -1,0 +1,12 @@
+import Math;
+import 'AP.du' as ap;
+import 'GP.du' as gp;
+import 'pow_sum.du' as pow;
+
+def main() {
+  var seq = input_seq()
+   
+
+
+
+}

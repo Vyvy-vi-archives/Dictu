@@ -1,0 +1,22 @@
+def arithmeticCreator(a, d, num){
+  var seq = [a];
+  for(var i=0; i < num-1; ++i){
+    a += d;
+    seq.push(a);
+  }
+  var sum = 0;
+  for(var i=0; i < seq.len(); ++i){
+    sum += seq[i];
+  }
+  var return_values = [seq, sum];
+  return return_values;
+}
+
+
+if (__file__ == System.argv[0]){
+  var num1 = input("Enter the first term: ").toNumber();
+  var diff = input("Enter the common difference: ").toNumber();
+  var nums = input("Enter the no. of terms you want to calculate the sum to: ").toNumber();
+  var returned = arithmeticCreator(num1, diff, nums);
+  print("The series is given by\n{}\nThe sum of the AP is:\n{}".format(returned[0],returned[1]));
+}

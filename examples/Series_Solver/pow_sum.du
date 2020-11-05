@@ -1,0 +1,12 @@
+def powerSum(num, pow){
+  var seq = [];
+  for(var i=1; i < num+1; ++i){
+    seq.push(i ** pow);
+  }
+  var sum = 0;
+  for(var i=0; i < seq.len(); ++i){
+    sum += seq[i];
+  }
+  var return_values = [seq, sum];
+  return return_values;
+}
