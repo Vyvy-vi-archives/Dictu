@@ -1,0 +1,31 @@
+/*
+This is an example script for printing:
+  - the current date
+  - print date
+  - print UNIX timestamp
+  - the current time
+  - duration between user provided date and present date
+  - duration between user provided time and current5 time 
+*/
+
+import Datetime;
+
+def menu(){
+  print('Date-Time-Example\n');
+  var options = ['1- Print the day',
+                 '2- Print the date',
+                 '3- Print the Day',
+                 '4- Print the Month',
+                 '5- Print the Year',
+                 '6- Print the time',
+                 '7- Print current date and time',
+                 '8- Print UNIX timestamp',
+                 '9- Print duration between today and another date',
+                 '10- Print duration between present time and another time.'];
+  for (var i = 0; i < options.len(), i++){
+    print(options(i));
+  }
+  choice = input('Enter the action no. that you want to execute: ');
+}
+print(Datetime.strftime("Today is %A"));
+main();
